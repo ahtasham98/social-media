@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<!-- saved from url=(0119)file:///C:/Users/Forbmax/AppData/Local/Microsoft/Windows/INetCache/IE/OQDUUUWI/pakistan_social_media_report_(1)[1].html -->
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pakistan Social Media Analytics Report - September 2025</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+        background: linear-gradient(
+          135deg,
+          #0a0a0a 0%,
+          #1a1a2e 25%,
+          #16213e 50%,
+          #0f3460 100%
+        );
+        color: #ffffff;
+        min-height: 100vh;
+        line-height: 1.6;
+      }
+
+      .container {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 2rem;
+      }
+
+      .header {
+        text-align: center;
+        margin-bottom: 3rem;
+        position: relative;
+      }
+
+      .header::before {
+        content: "";
+        position: absolute;
+        top: -30px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100px;
+        height: 2px;
+        background: linear-gradient(90deg, transparent, #00d4ff, transparent);
+        animation: glow 2s ease-in-out infinite alternate;
+      }
+
+      @keyframes glow {
+        from {
+          opacity: 0.5;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      h1 {
+        font-size: 3rem;
+        font-weight: 700;
+        background: linear-gradient(135deg, #00d4ff, #ff6b6b, #4ecdc4);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin-bottom: 1rem;
+      }
+
+      .subtitle {
+        font-size: 1.2rem;
+        color: #8892b0;
+        margin-bottom: 0.5rem;
+      }
+
+      .date {
+        font-size: 1rem;
+        color: #64b5f6;
+        font-weight: 300;
+      }
+
+      .executive-summary {
+        background: rgba(0, 212, 255, 0.1);
+        backdrop-filter: blur(20px);
+        border: 1px solid rgba(0, 212, 255, 0.3);
+        border-radius: 20px;
+        padding: 2rem;
+        margin-bottom: 3rem;
+        border-left: 5px solid #00d4ff;
+      }
+
+      .summary-title {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: #00d4ff;
+        margin-bottom: 1rem;
+      }
+
+      .key-insights {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 1rem;
+        margin-bottom: 2rem;
+      }
+
+      .insight-card {
+        background: rgba(255, 255, 255, 0.05);
+        backdrop-filter: blur(15px);
+        border-radius: 15px;
+        padding: 1.5rem;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        text-align: center;
+        transition: transform 0.3s ease;
+      }
+
+      .insight-card:hover {
+        transform: translateY(-5px);
+      }
+
+      .insight-number {
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: #4caf50;
+        margin-bottom: 0.5rem;
+      }
+
+      .insight-label {
+        font-size: 0.9rem;
+        color: #ccd6f6;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+      }
+
+      .section {
+        margin-bottom: 3rem;
+      }
+
+      .section-title {
+        font-size: 2rem;
+        font-weight: 600;
+        margin-bottom: 1.5rem;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+      }
+
+      .section-title::before {
+        content: "";
+        width: 5px;
+        height: 30px;
+        background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+        border-radius: 3px;
+      }
+
+      .platforms-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        gap: 2rem;
+      }
+
+      .platform-card {
+        background: rgba(255, 255, 255, 0.08);
+        backdrop-filter: blur(25px);
+        border-radius: 20px;
+        padding: 2rem;
+        border: 1px solid rgba(255, 255, 255, 0.15);
+        position: relative;
+        overflow: hidden;
+      }
+
+      .platform-card::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 3px;
+        background: var(--platform-color);
+      }
+
+      .twitter-card {
+        --platform-color: linear-gradient(90deg, #1da1f2, #0d8bd9);
+      }
+      .youtube-card {
+        --platform-color: linear-gradient(90deg, #ff0000, #cc0000);
+      }
+      .web-card {
+        --platform-color: linear-gradient(90deg, #4caf50, #388e3c);
+      }
+
+      .platform-header {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        margin-bottom: 1.5rem;
+      }
+
+      .platform-icon {
+        width: 50px;
+        height: 50px;
+        border-radius: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.5rem;
+        font-weight: bold;
+      }
+
+      .twitter-icon {
+        background: linear-gradient(135deg, #1da1f2, #0d8bd9);
+      }
+      .youtube-icon {
+        background: linear-gradient(135deg, #ff0000, #cc0000);
+      }
+      .web-icon {
+        background: linear-gradient(135deg, #4caf50, #388e3c);
+      }
+
+      .platform-title {
+        font-size: 1.5rem;
+        font-weight: 600;
+      }
+
+      .trend-list {
+        list-style: none;
+      }
+
+      .trend-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      }
+
+      .trend-item:last-child {
+        border-bottom: none;
+      }
+
+      .trend-content {
+        flex: 1;
+      }
+
+      .trend-title {
+        font-weight: 500;
+        color: #ccd6f6;
+        margin-bottom: 0.25rem;
+      }
+
+      .trend-description {
+        font-size: 0.85rem;
+        color: #8892b0;
+      }
+
+      .trend-engagement {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 0.25rem;
+      }
+
+      .engagement-metric {
+        font-size: 0.8rem;
+        color: #00d4ff;
+        font-weight: 500;
+      }
+
+      .sentiment-analysis {
+        background: rgba(255, 255, 255, 0.06);
+        backdrop-filter: blur(25px);
+        border-radius: 20px;
+        padding: 2rem;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        margin-bottom: 3rem;
+      }
+
+      .sentiment-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 2rem;
+        margin-top: 1.5rem;
+      }
+
+      .sentiment-card {
+        text-align: center;
+        padding: 1.5rem;
+        border-radius: 15px;
+        border: 2px solid;
+      }
+
+      .positive-sentiment {
+        background: rgba(76, 175, 80, 0.1);
+        border-color: #4caf50;
+      }
+
+      .negative-sentiment {
+        background: rgba(244, 67, 54, 0.1);
+        border-color: #f44336;
+      }
+
+      .neutral-sentiment {
+        background: rgba(33, 150, 243, 0.1);
+        border-color: #2196f3;
+      }
+
+      .sentiment-percentage {
+        font-size: 2rem;
+        font-weight: 700;
+        margin-bottom: 0.5rem;
+      }
+
+      .positive-sentiment .sentiment-percentage {
+        color: #4caf50;
+      }
+      .negative-sentiment .sentiment-percentage {
+        color: #f44336;
+      }
+      .neutral-sentiment .sentiment-percentage {
+        color: #2196f3;
+      }
+
+      .impact-analysis {
+        background: rgba(255, 255, 255, 0.06);
+        backdrop-filter: blur(25px);
+        border-radius: 20px;
+        padding: 2rem;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        margin-bottom: 3rem;
+      }
+
+      .impact-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+        margin-top: 1.5rem;
+      }
+
+      .impact-item {
+        padding: 1.5rem;
+        background: rgba(255, 255, 255, 0.03);
+        border-radius: 15px;
+        border-left: 4px solid #ff6b6b;
+      }
+
+      .impact-title {
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: #ff6b6b;
+        margin-bottom: 1rem;
+      }
+
+      .recommendations {
+        background: rgba(76, 175, 80, 0.1);
+        backdrop-filter: blur(25px);
+        border-radius: 20px;
+        padding: 2rem;
+        border: 1px solid rgba(76, 175, 80, 0.3);
+      }
+
+      .recommendations-list {
+        list-style: none;
+        margin-top: 1.5rem;
+      }
+
+      .recommendations-list li {
+        padding: 0.75rem 0;
+        padding-left: 2rem;
+        position: relative;
+        color: #ccd6f6;
+      }
+
+      .recommendations-list li::before {
+        content: "→";
+        position: absolute;
+        left: 0;
+        color: #4caf50;
+        font-weight: bold;
+      }
+
+      .hashtag {
+        background: rgba(0, 212, 255, 0.2);
+        color: #00d4ff;
+        padding: 0.25rem 0.5rem;
+        border-radius: 20px;
+        font-size: 0.85rem;
+        font-weight: 500;
+      }
+
+      .metric-highlight {
+        background: linear-gradient(135deg, #ff6b6b, #4ecdc4);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: 700;
+      }
+
+      @media (max-width: 768px) {
+        .container {
+          padding: 1rem;
+        }
+        h1 {
+          font-size: 2rem;
+        }
+        .platforms-grid {
+          grid-template-columns: 1fr;
+        }
+        .sentiment-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1>Social Media Analytics Report By DEMP</h1>
+        <p class="subtitle">
+          Directorate of Electronic Media &amp; Publications | Comprehensive
+          Analysis of Digital Trends &amp; Public Sentiment
+        </p>
+        <p class="date">
+          September 14, 2025 | Real-time Data Analysis | Morning Update 6AM -
+          12PM
+        </p>
+      </header>
+
+      <section class="executive-summary">
+        <h2 class="summary-title">📊 Executive Summary</h2>
+        <p>
+          Pakistan's social media landscape in September 2025 has been dominated
+          by <strong>flood relief efforts</strong>,
+          <strong>international relations</strong>, and
+          <strong>cultural celebrations</strong>. The devastating floods have
+          generated massive engagement across platforms, with the hashtag
+          <span class="hashtag">#MaryamWithFloodVictims</span> trending
+          prominently. International topics including
+          <strong>Qatar relations</strong>,
+          <strong>Hamas-Israel conflict</strong>, and
+          <strong>China's investment commitments</strong> are driving
+          significant discourse. Meanwhile, entertainment content continues to
+          perform strongly on YouTube with Pakistani dramas and religious
+          content leading viewership.
+        </p>
+      </section>
+
+      <div class="key-insights">
+        <div class="insight-card">
+          <div class="insight-number">4.2M+</div>
+          <div class="insight-label">People Affected by Floods</div>
+        </div>
+        <div class="insight-card">
+          <div class="insight-number">883</div>
+          <div class="insight-label">Casualties Reported</div>
+        </div>
+        <div class="insight-card">
+          <div class="insight-number">$30B+</div>
+          <div class="insight-label">Economic Impact</div>
+        </div>
+        <div class="insight-card">
+          <div class="insight-number">69.8M</div>
+          <div class="insight-label">Total Mentions</div>
+        </div>
+      </div>
+
+      <section class="section">
+        <h2 class="section-title">🔥 Top 5 Trending Topics Analysis</h2>
+
+        <div class="platforms-grid">
+          <!-- Twitter/X Trends -->
+          <div class="platform-card twitter-card">
+            <div class="platform-header">
+              <div class="platform-icon twitter-icon">𝕏</div>
+              <div class="platform-title">Twitter/X Trends</div>
+            </div>
+            <ul class="trend-list">
+              <li class="trend-item">
+                <div class="trend-content">
+                  <div class="trend-title">#MaryamWithFloodVictims</div>
+                  <div class="trend-description">
+                    Political solidarity during flood crisis
+                  </div>
+                </div>
+                <div class="trend-engagement">
+                  <span class="engagement-metric">20K tweets</span>
+                </div>
+              </li>
+              <li class="trend-item">
+                <div class="trend-content">
+                  <div class="trend-title">Qatar Relations</div>
+                  <div class="trend-description">
+                    Diplomatic discussions and partnerships
+                  </div>
+                </div>
+                <div class="trend-engagement">
+                  <span class="engagement-metric">626K mentions</span>
+                </div>
+              </li>
+              <li class="trend-item">
+                <div class="trend-content">
+                  <div class="trend-title">Hamas/Palestine</div>
+                  <div class="trend-description">
+                    Middle East conflict solidarity
+                  </div>
+                </div>
+                <div class="trend-engagement">
+                  <span class="engagement-metric">465K tweets</span>
+                </div>
+              </li>
+              <li class="trend-item">
+                <div class="trend-content">
+                  <div class="trend-title">iPhone 17 Launch</div>
+                  <div class="trend-description">
+                    Technology trends and consumer interest
+                  </div>
+                </div>
+                <div class="trend-engagement">
+                  <span class="engagement-metric">213K mentions</span>
+                </div>
+              </li>
+              <li class="trend-item">
+                <div class="trend-content">
+                  <div class="trend-title">Dr. Zakir Naik</div>
+                  <div class="trend-description">
+                    Religious scholar discussions
+                  </div>
+                </div>
+                <div class="trend-engagement">
+                  <span class="engagement-metric">Trending hourly</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- YouTube Trends -->
+          <div class="platform-card youtube-card">
+            <div class="platform-header">
+              <div class="platform-icon youtube-icon">▶</div>
+              <div class="platform-title">YouTube Trends</div>
+            </div>
+            <ul class="trend-list">
+              <li class="trend-item">
+                <div class="trend-content">
+                  <div class="trend-title">Main Zameen Tu Aasmaan</div>
+                  <div class="trend-description">
+                    Drama featuring Feroze Khan &amp; Hiba Bukhari
+                  </div>
+                </div>
+                <div class="trend-engagement">
+                  <span class="engagement-metric">Green TV</span>
+                </div>
+              </li>
+              <li class="trend-item">
+                <div class="trend-content">
+                  <div class="trend-title">Geo News Live Stream</div>
+                  <div class="trend-description">
+                    24/7 Pakistan news coverage
+                  </div>
+                </div>
+                <div class="trend-engagement">
+                  <span class="engagement-metric">397M+ views</span>
+                </div>
+              </li>
+              <li class="trend-item">
+                <div class="trend-content">
+                  <div class="trend-title">12 Rabi-Ul-Awal Naats</div>
+                  <div class="trend-description">
+                    Religious content for Milad celebrations
+                  </div>
+                </div>
+                <div class="trend-engagement">
+                  <span class="engagement-metric">Hafiz Tahir Qadri</span>
+                </div>
+              </li>
+              <li class="trend-item">
+                <div class="trend-content">
+                  <div class="trend-title">Biryani Drama Teaser</div>
+                  <div class="trend-description">
+                    Ramsha Khan &amp; Khushal Khan new series
+                  </div>
+                </div>
+                <div class="trend-engagement">
+                  <span class="engagement-metric">ARY Digital</span>
+                </div>
+              </li>
+              <li class="trend-item">
+                <div class="trend-content">
+                  <div class="trend-title">Alice in Borderland S3</div>
+                  <div class="trend-description">
+                    Netflix series global phenomenon
+                  </div>
+                </div>
+                <div class="trend-engagement">
+                  <span class="engagement-metric">Sept 25 release</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Web/News Trends -->
+          <div class="platform-card web-card">
+            <div class="platform-header">
+              <div class="platform-icon web-icon">🌐</div>
+              <div class="platform-title">Web/News Trends</div>
+            </div>
+            <ul class="trend-list">
+              <li class="trend-item">
+                <div class="trend-content">
+                  <div class="trend-title">Pakistan Flood Crisis 2025</div>
+                  <div class="trend-description">
+                    Devastating monsoon floods affecting millions
+                  </div>
+                </div>
+                <div class="trend-engagement">
+                  <span class="engagement-metric">Global coverage</span>
+                </div>
+              </li>
+              <li class="trend-item">
+                <div class="trend-content">
+                  <div class="trend-title">
+                    China-Pakistan Economic Corridor 2.0
+                  </div>
+                  <div class="trend-description">
+                    $7B MoUs signed in Beijing
+                  </div>
+                </div>
+                <div class="trend-engagement">
+                  <span class="engagement-metric">Investment focus</span>
+                </div>
+              </li>
+              <li class="trend-item">
+                <div class="trend-content">
+                  <div class="trend-title">International Flood Aid</div>
+                  <div class="trend-description">
+                    US, China, ADB emergency assistance
+                  </div>
+                </div>
+                <div class="trend-engagement">
+                  <span class="engagement-metric">Multi-billion aid</span>
+                </div>
+              </li>
+              <li class="trend-item">
+                <div class="trend-content">
+                  <div class="trend-title">PM Shehbaz Economic Reforms</div>
+                  <div class="trend-description">
+                    Flood rehabilitation priority
+                  </div>
+                </div>
+                <div class="trend-engagement">
+                  <span class="engagement-metric">Policy updates</span>
+                </div>
+              </li>
+              <li class="trend-item">
+                <div class="trend-content">
+                  <div class="trend-title">Military Relief Operations</div>
+                  <div class="trend-description">
+                    Army-led rescue and rehabilitation
+                  </div>
+                </div>
+                <div class="trend-engagement">
+                  <span class="engagement-metric">COAS visits</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="sentiment-analysis">
+        <h2 class="section-title">💭 Sentiment Analysis</h2>
+        <p>
+          Overall public sentiment reflects a mix of
+          <strong>concern</strong> for flood victims, <strong>hope</strong> for
+          international aid, and <strong>solidarity</strong> with affected
+          communities. Political discussions show polarization, while cultural
+          and religious content maintains positive engagement.
+        </p>
+
+        <div class="sentiment-grid">
+          <div class="sentiment-card neutral-sentiment">
+            <div class="sentiment-percentage">58%</div>
+            <div>Neutral</div>
+            <p>Factual reporting, news coverage</p>
+          </div>
+          <div class="sentiment-card positive-sentiment">
+            <div class="sentiment-percentage">27%</div>
+            <div>Positive</div>
+            <p>Aid announcements, solidarity</p>
+          </div>
+          <div class="sentiment-card negative-sentiment">
+            <div class="sentiment-percentage">15%</div>
+            <div>Negative</div>
+            <p>Crisis reporting, casualties</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="impact-analysis">
+        <h2 class="section-title">📈 Impact Analysis</h2>
+
+        <div class="impact-grid">
+          <div class="impact-item">
+            <h3 class="impact-title">Economic Impact</h3>
+            <p>
+              The 2025 floods have caused
+              <span class="metric-highlight">$30+ billion</span> in damages,
+              significantly impacting Pakistan's economic recovery.
+              Reconstruction needs exceed
+              <span class="metric-highlight">$16 billion</span>, requiring
+              substantial international support.
+            </p>
+          </div>
+
+          <div class="impact-item">
+            <h3 class="impact-title">Social Media Engagement</h3>
+            <p>
+              Flood-related hashtags have generated unprecedented engagement,
+              with
+              <span class="metric-highlight">#MaryamWithFloodVictims</span>
+              alone reaching 20K tweets. Cross-platform solidarity campaigns are
+              driving meaningful action.
+            </p>
+          </div>
+
+          <div class="impact-item">
+            <h3 class="impact-title">International Relations</h3>
+            <p>
+              The crisis has strengthened diplomatic ties, with
+              <span class="metric-highlight">China providing $6M</span> in
+              grants,
+              <span class="metric-highlight">ADB offering $3M</span> emergency
+              funds, and the US approving flood relief assistance.
+            </p>
+          </div>
+
+          <div class="impact-item">
+            <h3 class="impact-title">Digital Transformation</h3>
+            <p>
+              Pakistani YouTube channels like
+              <span class="metric-highlight"
+                >HAR PAL GEO (69.8M subscribers)</span
+              >
+              and
+              <span class="metric-highlight"
+                >ARY Digital HD (65.4M subscribers)</span
+              >
+              are dominating digital news consumption.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="recommendations">
+        <h2 class="section-title">🎯 Strategic Recommendations</h2>
+
+        <ul class="recommendations-list">
+          <li>
+            <strong>Crisis Communication:</strong> Leverage the momentum of
+            flood-related hashtags to drive donations and international support
+            through coordinated social media campaigns.
+          </li>
+          <li>
+            <strong>Content Strategy:</strong> Pakistani drama and religious
+            content show strong engagement - brands should consider partnerships
+            with these high-performing content categories.
+          </li>
+          <li>
+            <strong>International Relations:</strong> The positive sentiment
+            around international aid presents opportunities for diplomatic and
+            economic partnerships, especially with China and Gulf states.
+          </li>
+          <li>
+            <strong>Digital News Consumption:</strong> The dominance of
+            Pakistani news channels on YouTube indicates a shift toward
+            digital-first news consumption requiring platform-specific
+            strategies.
+          </li>
+          <li>
+            <strong>Real-time Monitoring:</strong> Implement continuous social
+            listening for flood-related discussions to identify emerging needs
+            and coordinate relief efforts effectively.
+          </li>
+        </ul>
+      </section>
+    </div>
+  </body>
+</html>
